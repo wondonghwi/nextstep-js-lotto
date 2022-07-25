@@ -1,6 +1,13 @@
-<p align="middle" >
-  <img width="200px;" src="./src/images/lotto_ball.png"/>
-</p>
+# 로또 작업 내용
+- [작업내용 데모링크](https://wondonghwi.github.io/nextstep-js-lotto/)
+
+- [로또 1차 미션 PR 코드리뷰](https://github.com/next-step/js-lotto/pull/126)
+- [로또 2차 미션 PR 코드리뷰](https://github.com/next-step/js-lotto/pull/148)
+
+> vanila javascript로 작업, Cypress로 E2E Test 진행
+
+# 로또 미션 내용
+
 <h2 align="middle">행운의 로또</h2>
 <p align="middle">자바스크립트로 구현하는 로또 어플리케이션</p>
 <p align="middle">
