@@ -18,10 +18,6 @@
   <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"/>
 </p>
 
-<p align="middle">
-  <a href="https://next-step.github.io/js-lotto">🖥️ 데모 링크</a>
-</p>
-
 ## 🔥 Projects!
 
 <p align="middle">
