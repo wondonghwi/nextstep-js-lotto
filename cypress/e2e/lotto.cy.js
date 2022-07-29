@@ -1,9 +1,4 @@
-import { LOTTO } from '../../src/js/constants.js';
-
-const LOTTO_PRICE = {
-  FAIL_TEST_PRICE: 1350,
-  SUCCESS_TEST_PRICE: 3000,
-};
+import { LOTTO, LOTTO_PRICE } from '../../src/js/constants.js';
 
 describe('Lotto 테스트', () => {
   beforeEach(() => {
