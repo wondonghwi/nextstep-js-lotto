@@ -1,4 +1,4 @@
-import { LOTTO } from '../../src/js/constants.js';
+import { LOTTO_PRICE } from '../../src/js/constants.js';
 
 Cypress.Commands.add('submitPriceInputForm', (price) => {
   cy.get('input[name="purchasePrice"]').type(price, { force: true }).get('#purchase-form').submit();
@@ -13,7 +13,7 @@ Cypress.Commands.add('clickResetButton', () => {
 });
 
 Cypress.Commands.add('submitWinningInputForm', () => {
-  cy.submitPriceInputForm(LOTTO.SUCCESS_TEST_PRICE);
+  cy.submitPriceInputForm(LOTTO_PRICE.SUCCESS_TEST_PRICE);
   for (let i = 1; i < 8; i++) {
     cy.get(`[data-order=${i}]`).type(i, { force: true });
   }
