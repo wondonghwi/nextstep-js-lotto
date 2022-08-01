@@ -21,6 +21,7 @@ const modal = document.querySelector('.modal');
 const modalDataPlaceSet = modal.querySelectorAll('[data-place]');
 const modalClose = modal.querySelector('.modal-close');
 const revenueRate = modal.querySelector('#revenue-rate');
+
 const resetButton = modal.querySelector('#reset');
 
 const lottoPurchaseSection = new LottoPurchaseSection(purchaseSection, purchaseTextLabel);
@@ -110,6 +111,5 @@ winningInputWrapper.addEventListener('input', onChangeInputFocus);
 lottoWinningNumberForm.addEventListener('submit', renderLottoWinningForm);
 
 modalClose.addEventListener('click', closeModal);
-winningInputWrapper.addEventListener('input', onChangeInputFocus);
 
 resetButton.addEventListener('click', reset);

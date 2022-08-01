@@ -107,8 +107,8 @@ class Lotto {
   }
 
   resetLottoData() {
-    this.lottoNumbers = [];
     this.score = {};
+    this.lottoNumbers = [];
     this.hiddenLottoList();
     while (this.lottoWrapperList.hasChildNodes()) {
       this.lottoWrapperList.removeChild(this.lottoWrapperList.firstChild);
