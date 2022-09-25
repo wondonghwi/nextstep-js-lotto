@@ -79,8 +79,7 @@ const renderLottoWinningForm = (e) => {
     }
 
     lotto.setScore(winningNumbers, bonusNumbers);
-    const lottoNumberArrayList = lotto.getLottoRandomNumbers();
-    lottoModal.renderModalContents(lotto, lottoNumberArrayList);
+    lottoModal.renderModalContents(lotto);
 
     lottoModal.openModal();
   } catch (error) {

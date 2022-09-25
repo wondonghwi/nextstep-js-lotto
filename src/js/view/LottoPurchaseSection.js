@@ -1,4 +1,4 @@
-import { INITIAL_PURCHASE_TEXT_LABEL } from '../constants.js';
+import { INITIAL_PURCHASE_TEXT_LABEL, VIEW_CONDITION } from '../constants.js';
 
 class LottoPurchaseSection {
   constructor(lottoPurchaseSection, lottoPurchaseTextLabel) {
@@ -7,16 +7,16 @@ class LottoPurchaseSection {
   }
 
   isAlreadyExistList() {
-    return this.lottoPurchaseSection.classList.contains('is-active');
+    return this.lottoPurchaseSection.classList.contains(VIEW_CONDITION);
   }
 
   renderPurchasedCount(dividedLottoCount) {
-    this.lottoPurchaseSection.classList.add('is-active');
+    this.lottoPurchaseSection.classList.add(VIEW_CONDITION);
     this.lottoPurchaseTextLabel.textContent = `총 ${dividedLottoCount}개를 구매하였습니다.`;
   }
 
   resetPurchasedCount() {
-    this.lottoPurchaseSection.classList.remove('is-active');
+    this.lottoPurchaseSection.classList.remove(VIEW_CONDITION);
     this.lottoPurchaseTextLabel.textContent = INITIAL_PURCHASE_TEXT_LABEL;
   }
 }

@@ -28,17 +28,13 @@ class Lotto {
       lottoSet.add(this.createRandomNumber());
     }
 
-    return [...lottoSet].sort((a, b) => a - b);
+    return Array.from(lottoSet).sort((a, b) => a - b);
   }
 
   createLottoList(dividedLottoCount) {
     for (let i = 0; i < dividedLottoCount; i++) {
       this.lottoNumbers.push(this.createLotto());
     }
-    return this.lottoNumbers;
-  }
-
-  getLottoRandomNumbers() {
     return this.lottoNumbers;
   }
 
@@ -96,12 +92,14 @@ class Lotto {
   getRevenueRate() {
     let revenue = 0;
     const lottoScoreArray = this.lottoNumbers.map((lotto) => this.addScore(lotto));
+
     lottoScoreArray.forEach((score) => {
       const { price } = RANKING[score] ?? revenue;
       if (price) {
         revenue += price;
       }
     });
+
     const price = this.lottoNumbers.length * LOTTO.UNIT;
     return `당신의 총 수익률은 ${calculatedRevenueRate(revenue, price)}%입니다.`;
   }
