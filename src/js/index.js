@@ -104,7 +104,7 @@ const reset = () => {
 };
 
 purchaseForm.addEventListener('submit', renderLottoList);
-showToggleButton.addEventListener('click', () => lotto.toggleLottoList(lotto));
+showToggleButton.addEventListener('click', () => lotto.toggleLottoList());
 
 winningInputWrapper.addEventListener('input', onChangeInputFocus);
 lottoWinningNumberForm.addEventListener('submit', renderLottoWinningForm);

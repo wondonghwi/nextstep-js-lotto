@@ -39,6 +39,7 @@ class Lotto {
   }
 
   renderCreatedLottoList() {
+    // NOTE : 페이지 reflow를 유발하지않아서 성능향상을 위해 사용
     const fragment = document.createDocumentFragment();
 
     this.lottoNumbers.forEach((lottoNumbers) => {

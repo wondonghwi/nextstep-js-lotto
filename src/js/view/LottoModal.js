@@ -19,7 +19,7 @@ class LottoModal {
     this.modalDataPlaceSet.forEach((element) => {
       const { place } = element.dataset;
       const winningRankCount = lottoRanking[place] ?? 0;
-      element.textContent = `${winningRankCount} 개`;
+      element.textContent = `${winningRankCount}개`;
     });
 
     this.revenueRate.textContent = lotto.getRevenueRate();
