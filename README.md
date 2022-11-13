@@ -3,7 +3,7 @@
 - [로또 2단계 1차 미션 PR 코드리뷰](https://github.com/next-step/js-lotto/pull/126)
 - [로또 2단계 2차 미션 PR 코드리뷰](https://github.com/next-step/js-lotto/pull/148)
 
-> vanila javascript로 작업, Cypress로 E2E Test 진행
+> Vanilla javascript로 작업, Cypress로 E2E Test 진행
 
 
 
